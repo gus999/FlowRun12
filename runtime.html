@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Runtime & Flowrate</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+  </head>
+
+   <body>
+    <main>
+      
+     <header>
+        <h1>Run time & Flow Rate Calculator</h1>
+      </header>  
+        
+
+
+       
+  <div id="div1" >
+      <!-- <div class="diamSelector"> -->
+
+      <div class="motul" >
+      
+      <section class="inputs" id="firstCombo">
+        <form action="" method="">
+          <label for=""> Pipeline Diameter (in): </label>
+          <select name="dropbtn" id="dropbtn" onchange="changeFunction (this);">
+            <option disabled hidden selected>Select</option>
+            <option value="6.625">6.625</option>
+            <option value="8.625">8.625</option>
+            <option value="10.75">10.75</option>
+            <option value="12.75">12.75</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+            <option value="30">30</option>
+            <option value="32">32</option>
+            <option value="34">34</option>
+            <option value="36">36</option>
+            <option value="38">38</option>
+            <option value="40">40</option>
+            <option value="48">48 (Hippo)</option>
+
+          </select>
+        </form>
+
+        <div>
+          <label for=""> Thickness (mm):</label>
+          <input
+            type="number"
+            name="thickness"
+            id="thickness"
+            class="combo"
+            value="10"
+          />
+        </div>
+
+        <div>
+          <label for=""> CS Area (m<sup>2</sup>): </label>
+          <input
+            type="text"
+            name="area"
+            id="area"
+            class="combo"
+            value=""
+            disabled
+          />
+        </div>
+
+        <div>
+          <label for=""> Lenght (km): </label>
+          <input
+            type="number"
+            name="lenght"
+            id="lenght"
+            class="combo"
+            value="100"
+          />
+        </div>
+
+        <div>
+          <label for=""> Volume (m<sup>3</sup></sup>): </label>
+          <input
+            type="text"
+            name="volume"
+            id="volume"
+            class="combo"
+            value=""
+            disabled
+          />
+        </div>
+        <div>
+          <label for=""> Oil Barrel (BBL): </label>
+          <input
+            type="text"
+            name="barrel"
+            id="barrel"
+            class="combo"
+            value=""
+            disabled
+          />
+        </div>
+      </section>
+    </div>  
+    <!-- </div> -->
+
+  
+    
+
+    <div class="runtime" id="runTime">
+
+      <div class="panel panel-primary col-xs-6 col-md-2">
+        <div class="panel-heading">
+        <h3 class="panel-title">Time</h3>
+        </div>
+        <div class="panel-body">
+          <div class="input-group">
+            <input class="form-control" type="number" id="time" >
+            <span class="input-group-addon">hours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div>   -->
+
+
+        <!-- <div class="container-fluid" > -->
+          <div class=panel-group id="flow">
+            <div class="panel panel-primary col-xs-6 col-md-2">
+              <div class="panel-heading">
+                <h3 class="panel-title">Flow Rate</h3>
+              </div>
+              <div class="panel-body">
+                <div class="input-group">
+                  <input class="form-control" type="number"  id="flowRateCMH" placeholder="Enter Flow rate" >
+                  <!-- required  oninput="setVelocity(this)" -->
+                  <span class="input-group-addon">m<sup>3</sup>/hr</span>
+                </div>
+                <div class="input-group">
+                  <input class="form-control" type="number" id="flowRateCMM"  >
+                  <!-- onchange="setVelocity(this,'CMM');" -->
+                  <span class="input-group-addon">m<sup>3</sup>/min</span>
+                </div>
+                <div class="input-group">
+                  <input class="form-control" type="number" id="flowRateLPM"  >
+                  <!-- required  onchange="setVelocity(this,'LPM');" -->
+                  <span class="input-group-addon">L/min</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="backBtn" onclick="backMainMenu()">Back</button>
+          </div>
+
+ 
+</main>
+<script src="main_1.0.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+/* header{
+    font-size: 1px;
+    height: 1px;
+} */
+
+.dropbtn1 {
+  position: fixed;
+  left: 40%;
+}
+.dropdown-content {
+  position: relative;
+  top: 60px;
+  left: -22px;
+}
+
+/* .firstcombo{
+      
+      position: absolute;
+      left: 0px;
+  } */
+
+/* .motul{
+      display: block;
+      position:;
+      left:0px;
+      top:0px;
+  } */
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin-top: 3%;
+  margin-left: 15%;
+  flex: 1 1 80%;
+  appearance: none;
+  background: none;
+  background-color: #0f79c0c9;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.motul > div {
+  position: sticky;
+  left: -30px;
+}
+
+#velOrFlow {
+  position: absolute;
+  top: 58%;
+  left: 105px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.velocity > div {
+  position: absolute;
+  top: 63%;
+  left: 28%;
+}
+
+/* Vel inputs gets mess up on Cellphone screen */
+/* .velocity:focus .panel-group {
+  display: none;
+  z-index:-3;
+} */
+
+.panel-group > div {
+  position: absolute;
+  top: 78%;
+  left: 28%;
+}
+
+/* .runtime:focus {
+  float: top;
+} */
+
+.runtime > div {
+  position: absolute;
+  top: 120%;
+  left: -14%;
+}
+
+/* .runtime>div{
+  position: absolute; */
+/* padding: 0%; */
+/* margin-top: 15%; */
+/* top: 100%; */
+/* align-items: center; */
+/* left: -10%; */
+
+/* } */
+
+#backBtn {
+  position: absolute;
+  top: 95%;
+  left: 30px;
+}
