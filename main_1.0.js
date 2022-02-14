@@ -1,5 +1,3 @@
- 
-
 var thicknessInput = document.getElementById("thickness");
 var km_m = document.getElementById("lenght");
 var area = document.getElementById("area");
@@ -12,31 +10,19 @@ var Cmh = document.getElementById("flowRateCMH");
 var time = document.getElementById("time");
 const combos = document.getElementsByClassName("combo");
 const combosFr = document.getElementsByClassName("form-control");
-// document.getElementById("velOrFlow").style.display="none";
-// document.getElementById("firstCombo").style.display = "none";
-// document.getElementById("velocidad").style.display = "none";
-// document.getElementById("flow").style.display = "none";
-// document.getElementById("backBtn").style.display = "none";
-// document.getElementById("runTime").style.display = "none";
 var backButton = document.getElementById("backBtn");
 
 lastInput = null;
-if (Cmm ) {
-  console.log("calculate");
-
 
 for (let i = 0; i < combos.length; i++) {
   let input = combos[i];
-
-
 
   input.addEventListener("input", function (event) {
     let value = parseFloat(
       event.target.value
     ); /* converts a string to a floating-point number.
     If a number cannot be parsed from the argument, it returns NaN-in english: type letters and won't be accepted */
-  
-    
+
     switch (event.target.name) {
       case "thickness":
         area.value = (
@@ -45,29 +31,22 @@ for (let i = 0; i < combos.length; i++) {
         ).toFixed(5);
         volume.value = (area.value * (km_m.value * 1000)).toFixed(3);
         barrelon.value = (volume.value * 6.28981).toFixed(3);
-        
+
         break;
 
       case "lenght":
         volume.value = (area.value * (value * 1000)).toFixed(3);
         barrelon.value = (volume.value * 6.28981).toFixed(3);
         break;
-    
     }
   });
-}
-}
-else {
-  console.log("2");
 }
 
 if (v === null) {
   v = 0;
 }
 
-// if (time === null) {
-//   time = 0;
-// }
+
 
 /*Code to switch velocity when any of 3 combos flowrate are changed*/
 
@@ -126,29 +105,6 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// function selectionFunction(ele) {
-//   if (ele.id == "ka") {
-
-//     document.getElementById("div2").style.display = "none";
-//     document.getElementById("firstCombo").style.display = "block";
-//     document.getElementById("velOrFlow").style.display="block";
-//     document.getElementById("velocidad").style.display = "block";
-//     document.getElementById("flow").style.display = "block";
-//     document.getElementById("runTime").style.display = "none";
-
-//     backButton.style.display = "block";
-//   } else {
-//     document.getElementById("div2").style.display = "none";
-//     document.getElementById("firstCombo").style.display = "block";
-//     document.getElementById("velocidad").style.display = "none";
-//     document.getElementById("flow").style.display = "block";
-//     document.getElementById("runTime").style.display = "block";
-
-//     backButton.style.display = "block";
-//   }
-// }
-
 function backMainMenu() {
   window.location = "../index.html";
   reset();
@@ -184,23 +140,5 @@ function setFlowRate() {
   Cmm.value = frCmm.toFixed(2);
   Cmh.value = frCmh.toFixed(2);
 }
-
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function (event) {
-//   if (!event.target.matches(".dropbtn")) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains("show")) {
-//         openDropdown.classList.remove("show");
-
-//       }
-//     }
-//   }
-// }
-
-
-
 
 
