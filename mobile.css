@@ -86,6 +86,7 @@
 
 .runtime:focus {
   float: top;
+  z-index: 3;
 }
 
 /* .runtime>div{
