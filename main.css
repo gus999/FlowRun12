@@ -4,14 +4,6 @@
   font-family: sans-serif;
 }
 
-/* .flex-container {
-  background-color:antiquewhite;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: wrap 100%;
-  align-items: center;
-
-} */
 
 main {
   width: 100%;
@@ -21,11 +13,11 @@ main {
     rgba(36, 184, 172, 0.644),
     rgba(218, 161, 75, 0.5)
   );
-  /* background-image: white; */
+  
 }
 
 header {
-  /* display: flex; */
+  
 
   justify-content: center;
   padding-top: 10px;
@@ -34,7 +26,7 @@ header {
 }
 
 h1 {
-  /* display: none; */
+  
   margin-bottom: 50px;
   text-align: center;
   font-size: 1px;
@@ -92,34 +84,18 @@ h1 {
 #velOrFlow {
   color: #034255;
   position: relative;
-  /* margin: auto; */
   text-align: center;
   top: 40px;
-  /* justify-content: center; */
   margin: 40px 10px;
-  /* position: relative;
-  display: block;
-  top: 30px;
-  left: 50%; */
-  /* margin: 3px 1px; */
-  /* width:190px; */
-  /* z-index: 1; */
+
 }
 
-/* .velocity>div {
-  position:relative;
-  top: 60px;
-  left: 37%;
-  
-}  */
-
-/* transform: translate(41.5%, 20%); */
 
 .velocity > div {
   position: relative;
   top: 30px;
   left: 41.7%;
-  /* transform: translate(41.5%, 20%); */
+  
 }
 
 .runtime {
@@ -127,9 +103,9 @@ h1 {
   position: relative;
   padding: 20px;
   top:56%;
-  /* 3% */
+  
   left: 41.4%;
-  /* transform: translate(41.5%, 20%); */
+  
 }
 
 .panel-group > div {
@@ -138,44 +114,13 @@ h1 {
   left: 25%;
 }
 
-/* .panel-group>div {
-  position:sticky;
-   top: 720px;
-  left: 37%;
-  transform: translate(41.5%, 20%); 
-} */
-
-/* .panel.panel-primary{
-top: 40px;
-left: 0%;
-border-style: dashed;
-} */
-
-
-/* .panel-group {
-  position: center;
-  padding: 55px;
-  top: 10%;
-  left: 10%;
-  transform: translate(25.6%, 55%);
-} */
-
-/* .panel-group {
-  position: absolute;
-  padding: 5px;
-  top: 550px;
-  left: 480px;
-  transform: translate(25.6%,55%); 
- 
-}   */
-
 .div2 {
   position: absolute;
   top: 300%;
   left: 100%;
 }
 
-/* Dropdown Button */
+
 .test {
   background-color: #016685;
   color: rgb(228, 188, 80);
@@ -262,18 +207,12 @@ select.combo2 option:hover {
   left: 16%;
 }
 
-/* removed  from .flow1 and .run2 */
 
 .dropdown-content a:hover {
   background-color: rgb(110, 40, 75);
   color: aliceblue;
 }
 
-/* .dropdown-content a:hover + .flow1 {
-  display: block;
-  position: relative;
-  margin: 1px;
-} */
 
 a:hover + div {
   display: block;
@@ -288,29 +227,20 @@ a:hover + div {
   background-color: #3e8e41;
 }
 
-/* .container-fluid{
-  position:absolute 70px 0px 0x 1px;
-  margin: 0px 2px;
-  padding: 0px 2px;
-  
-
- 
-} */
-
-/* #flow{
-  position: absolute;
-top: 630px;
-left: 80px;
-  
-} */
-
-/* .diamSelector>div{
-  position: absolute;
-  top: 0px;
-  left: px;
-  z-index: 2;
-} */
-
 #velocity:focus #velOrFlow {
   display: none;
+}
+
+#main-footer {
+background: #333;
+  color: #fff;
+  height: 5rem; }
+
+
+
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; 
 }
