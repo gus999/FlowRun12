@@ -56,6 +56,7 @@
   left: 105px;
   margin: 2px;
   padding: 2px;
+  z-index: -1;
 }
 
 .velocity > div {
@@ -75,21 +76,17 @@
   top: 78%;
   left: 28%;
   z-index: 2;
-  
 }
-
 
 .runtime > div {
   position: absolute;
-  
+
   top: 40%;
   left: -14%;
 }
 
-
 #flow:focus {
   float: top;
-  
 }
 
 /* .runtime>div{
