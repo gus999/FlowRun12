@@ -76,14 +76,16 @@
   left: 28%;
 }
 
-.runtime:focus {
-  float: top;
-}
 
 .runtime > div {
   position: absolute;
   top: 40%;
   left: -14%;
+}
+
+
+.runtime:focus {
+  float: top;
 }
 
 /* .runtime>div{
