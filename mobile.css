@@ -74,11 +74,14 @@
   position: absolute;
   top: 78%;
   left: 28%;
+  z-index: 2;
+  
 }
 
 
 .runtime > div {
   position: absolute;
+  
   top: 40%;
   left: -14%;
 }
