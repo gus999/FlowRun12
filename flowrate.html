@@ -25,13 +25,12 @@
         <h1>Run time & Flow Rate Calculator</h1>
       </header>  
       
- 
-
-       
-  <div id="div1"  >
-      <!-- <div class="diamSelector"> -->
-
-      <div class="motul" >
+    
+        <div id="stepOne"> 
+          <p>
+            <strong>STEP 1: Select & Enter Values below </strong>
+          </p>
+        </div>
       
       <section class="inputs" id="firstCombo">
         <form action="" method="">
@@ -118,17 +117,17 @@
           />
         </div>
       </section>
-    </div>  
-    <!-- </div> -->
+    
 
-    <div id="velOrFlow"> 
+    
+    <div id="stepTwo"> 
       <p>
-        <strong>Enter Velocity or Flow Rate </strong>
+        <strong>STEP 2: Enter Velocity or Flow Rate </strong>
       </p>
     </div>
-      <div class="velocity" id="velocidad">
+      
         
-       <div class="panel panel-primary col-xs-6 col-md-2" >
+       <div class="panel panel-primary col-xs-6 col-md-2" id="velTest" >
         <div class="panel-heading">
         <h3 class="panel-title">Velocity</h3>
         </div>
@@ -139,39 +138,37 @@
           </div>
         </div>
       </div>
-      </div>
+     
     
 
     
 
-  
-  <!-- <div class="container-fluid" > -->
-    <div class=panel-group id="flow">
-      <div class="panel panel-primary col-xs-6 col-md-2">
+
+      <div class="panel panel-primary col-xs-6 col-md-2" id="flowTest">
         <div class="panel-heading">
           <h3 class="panel-title">Flow Rate</h3>
         </div>
         <div class="panel-body">
           <div class="input-group">
             <input class="form-control" type="number"  id="flowRateCMH" placeholder="Enter Flow rate" >
-            <!-- required  oninput="setVelocity(this)" -->
+           
             <span class="input-group-addon">m<sup>3</sup>/hr</span>
           </div>
           <div class="input-group">
             <input class="form-control" type="number" id="flowRateCMM"  >
-            <!-- onchange="setVelocity(this,'CMM');" -->
+        
             <span class="input-group-addon">m<sup>3</sup>/min</span>
           </div>
           <div class="input-group">
             <input class="form-control" type="number" id="flowRateLPM"  >
-            <!-- required  onchange="setVelocity(this,'LPM');" -->
+            
             <span class="input-group-addon">L/min</span>
           </div>
         </div>
       </div>
       <button type="button" class="btn btn-primary" id="backBtn" onclick="backMainMenu()">Back</button>
     </div>
-  <!-- </div> -->
+
   
   
   
