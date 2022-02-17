@@ -61,7 +61,7 @@ h1 {
   
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content:left;
   align-items: center;
   max-width: 300px;
   flex: 1 1 80%;
@@ -104,10 +104,10 @@ h1 {
   left: 25%;
 } */
 
-#div2 {
+/* #div2 {
   position: absolute center;
    
-}
+} */
 
 .fa-solid {
   color: rgb(255, 255, 255);
